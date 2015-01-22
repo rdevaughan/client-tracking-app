@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="clients">
+   <head>
+    <link rel="stylesheet" type="text/css" href="js/boostrap.min.js" />
+   </head>
+   <body ng-controller="ClientController as myclients">
+    <div ng-repeat="client in myclients.clients">
+       <h1>{{client.lastName}}, {{client.firstName}}</h1>
+       <p>{{client.phone}}</p> 
+        <p>{{myclients.client.website}}</p>
+        <p>Active: <input ng-show="client.active" type="checkbox" checked="checked"></p>
+    </div>
+    
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+   </body>
+</html>
+    
